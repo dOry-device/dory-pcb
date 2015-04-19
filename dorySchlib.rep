@@ -1,0 +1,12 @@
+CSV text has been written to file : dorySchlib.csv
+
+Library Component Count : 5
+
+Name                Description
+----------------------------------------------------------------------------------------------------
+
+Jack                4 pin 6 contact headphone jack 3.5mm
+PCA9515DP           PCA9515 I2C logic level converter
+Seeed Studio Display Shield
+Si7055              
+XBee ZigBee S2C surface mount

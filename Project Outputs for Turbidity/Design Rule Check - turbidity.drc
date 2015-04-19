@@ -1,0 +1,80 @@
+Protel Design System Design Rule Check
+PCB File : \\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc
+Date     : 14.04.2015
+Time     : 16:38:58
+
+Processing Rule : Room Turbidity (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Turbidity'))
+   Violation between Room Definition Between Component on TopLayer And Rule on TopLayer
+   Violation between Room Definition Between Component on TopLayer And Rule on TopLayer
+   Violation between Room Definition Between Component on TopLayer And Rule on TopLayer
+   Violation between Room Definition Between Component on TopLayer And Rule on TopLayer
+   Violation between Room Definition Between Component on TopLayer And Rule on TopLayer
+Rule Violations :5
+
+Processing Rule : Width Constraint (Min=0.25mm) (Max=0.5mm) (Preferred=0.5mm) ((InNet('+5') OR InNet('GND')))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.2mm) (Max=0.5mm) (Preferred=0.25mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Pad U2-2(132mm,108.2mm)  Top Layer and 
+                     Pad U2-1(132.95mm,108.2mm)  Top Layer
+   Violation between Pad U2-3(131.05mm,108.2mm)  Top Layer and 
+                     Pad U2-2(132mm,108.2mm)  Top Layer
+   Violation between Pad U2-5(132mm,105.8mm)  Top Layer and 
+                     Pad U2-4(131.05mm,105.8mm)  Top Layer
+   Violation between Pad U2-6(132.95mm,105.8mm)  Top Layer and 
+                     Pad U2-5(132mm,105.8mm)  Top Layer
+Rule Violations :4
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+   Violation between Text "GND SDA SCL 5V" (126.676mm,101.657mm)  Top Overlay and 
+                     Track (126.93mm,101.53mm)(126.93mm,111.69mm)  Top Overlay
+   Violation between Text "GND SDA SCL 5V" (126.676mm,101.657mm)  Top Overlay and 
+                     Track (126.93mm,101.53mm)(129.47mm,101.53mm)  Top Overlay
+   Violation between Text "GND VOUT 5V" (135.476mm,104.357mm)  Top Overlay and 
+                     Track (135.73mm,104.23mm)(138.27mm,104.23mm)  Top Overlay
+   Violation between Text "GND VOUT 5V" (135.476mm,104.357mm)  Top Overlay and 
+                     Track (135.73mm,104.23mm)(135.73mm,111.85mm)  Top Overlay
+   Violation between Text "GND VOUT 5V" (135.476mm,104.357mm)  Top Overlay and 
+                     Track (135.73mm,111.85mm)(138.27mm,111.85mm)  Top Overlay
+Rule Violations :5
+
+Processing Rule : Silk primitive without silk layer
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "Adapter Header" (126.079mm,99.155mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "Adapter Header" (126.4mm,113.8mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "Cap Semi" (131.657mm,99.457mm)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "P2" (134.874mm,112.725mm)  Top Overlay
+Rule Violations :4
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 18
+Time Elapsed        : 00:00:00

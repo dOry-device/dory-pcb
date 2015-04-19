@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=GND Pin=-1
+Change Component Designator: OldDesignator= NewDesignator=C17
+Change Component Designator: OldDesignator= NewDesignator=C18
+Change Component Designator: OldDesignator= NewDesignator=P2
+Change Component Designator: OldDesignator=board NewDesignator=Adapter Header
+Added Component: Designator=R1(J1-0603)
+Added Component: Designator=R2(J1-0603)
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=VMES Pin=R2-2
+Added Pin To Net: NetName=NetP2_1 Pin=P2-1
+Added Pin To Net: NetName=NetP2_1 Pin=R1-2
+Added Net: Name=NetP2_1
+Added Member To Class: ClassName=Turbidity Member=Component Adapter Header
+Added Member To Class: ClassName=Turbidity Member=Component C17 Cap Semi
+Added Member To Class: ClassName=Turbidity Member=Component C18 Cap Semi
+Added Member To Class: ClassName=Turbidity Member=Component P2 Turbidity Header
+Added Member To Class: ClassName=Turbidity Member=Component R1 Res3
+Added Member To Class: ClassName=Turbidity Member=Component R2 Res3
+Added Room: Name=Turbidity

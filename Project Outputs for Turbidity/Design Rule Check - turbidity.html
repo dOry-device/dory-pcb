@@ -1,0 +1,423 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body {
+			font-family : verdana;
+		}
+		td, th {
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;
+		}
+		th {
+			background-color : #A6CAF0;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+		}
+		
+		.DRC_summary_header {							
+			padding-bottom : 0.1em;
+			border : 0px solid black;							
+			width: 100%;
+                        align: right;
+                        
+		}
+
+		.DRC_summary_header_col1, 
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3
+		{
+			color : black;
+			font-size:150%;
+                        padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2: 0em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top;
+			font-weight: bold;				
+		}
+		
+		.DRC_summary_header_col1 	
+		{		                       
+			text-align: right;
+                        width: auto;	
+		}
+
+		.DRC_summary_header_col2 	
+		{		
+			text-align: center;	
+		}
+
+		.DRC_summary_header_col3 	
+		{		
+			text-align: left;	
+		}
+
+
+		
+		.header_holder
+		{
+		Width = 100%;
+		border = 0px solid green;
+		padding = 0;
+		}
+		
+		
+		
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+			left:0;
+			top:0;
+			padding-top : 0.1em;			
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top
+
+		}
+		.front_matter {	
+			
+			margin-top: 5px;
+ 			margin-left: 0px;					 			
+ 			horizontal-align: left;
+		}
+				
+		
+		.front_matter_column1 {
+			width : 10em;	
+			text-align  : right;
+			padding-right:0.1em;
+			
+		}
+		
+		.front_matter_column2 {
+                        width: 0.1em;
+			align: center;
+			text-align : center;
+			margin-right  : 0.1em;	
+			margin-left   : 0.1em;
+		}
+		.front_matter_column3 {
+			width         : auto;  
+			text-align    : left;	
+			margin-right  : 0.5em;				
+		}
+		
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD14\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td Style="width:70%">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">14.04.2015</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">16:38:58</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc" class="file"><acronym title="\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc">\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td Style="Width:30%">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3" style="color : red">18</td></tr>
+</table>
+</td>
+</table>
+<hr><a name="IDASAONC"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAEBONC">Room Turbidity (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Turbidity'))</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAICONC">Width Constraint (Min=0.25mm) (Max=0.5mm) (Preferred=0.5mm) ((InNet('+5') OR InNet('GND')))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAOCONC">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAUCONC">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA0CONC">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAADONC">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAGDONC">Width Constraint (Min=0.2mm) (Max=0.5mm) (Preferred=0.25mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAMDONC">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDASDONC">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAYDONC">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA4DONC">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAIFONC">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAOFONC">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDABHONC">Silk primitive without silk layer</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDACQONC">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">18</td>
+</tr>
+</table><br><hr><a name="IDAEBONC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Room Turbidity (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Turbidity'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5278.543mil|Location1.Y=0mil|Location2.Y=4282.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5278.543mil|Location1.Y=0mil|Location2.Y=4282.48mil|Absolute=True">Room Definition Between Component on TopLayer And Rule on TopLayer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5447.638mil|Location1.Y=0mil|Location2.Y=4408.475mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5447.638mil|Location1.Y=0mil|Location2.Y=4408.475mil|Absolute=True">Room Definition Between Component on TopLayer And Rule on TopLayer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5220.472mil|Location1.Y=0mil|Location2.Y=4104.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5220.472mil|Location1.Y=0mil|Location2.Y=4104.331mil|Absolute=True">Room Definition Between Component on TopLayer And Rule on TopLayer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5273.622mil|Location1.Y=0mil|Location2.Y=4370.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5273.622mil|Location1.Y=0mil|Location2.Y=4370.079mil|Absolute=True">Room Definition Between Component on TopLayer And Rule on TopLayer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5101.181mil|Location1.Y=0mil|Location2.Y=4401.181mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5101.181mil|Location1.Y=0mil|Location2.Y=4401.181mil|Absolute=True">Room Definition Between Component on TopLayer And Rule on TopLayer</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDA4DONC"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5180.055mil|Location2.X=5213.646mil|Location1.Y=4238.126mil|Location2.Y=4281.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5180.055mil|Location2.X=5213.646mil|Location1.Y=4238.126mil|Location2.Y=4281.559mil|Absolute=True">Pad U2-2(132mm,108.2mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5217.457mil|Location2.X=5251.047mil|Location1.Y=4238.126mil|Location2.Y=4281.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5217.457mil|Location2.X=5251.047mil|Location1.Y=4238.126mil|Location2.Y=4281.559mil|Absolute=True">Pad U2-1(132.95mm,108.2mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5142.654mil|Location2.X=5176.244mil|Location1.Y=4238.126mil|Location2.Y=4281.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5142.654mil|Location2.X=5176.244mil|Location1.Y=4238.126mil|Location2.Y=4281.559mil|Absolute=True">Pad U2-3(131.05mm,108.2mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5180.055mil|Location2.X=5213.646mil|Location1.Y=4238.126mil|Location2.Y=4281.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5180.055mil|Location2.X=5213.646mil|Location1.Y=4238.126mil|Location2.Y=4281.559mil|Absolute=True">Pad U2-2(132mm,108.2mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5180.055mil|Location2.X=5213.646mil|Location1.Y=4143.638mil|Location2.Y=4187.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5180.055mil|Location2.X=5213.646mil|Location1.Y=4143.638mil|Location2.Y=4187.071mil|Absolute=True">Pad U2-5(132mm,105.8mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5142.654mil|Location2.X=5176.244mil|Location1.Y=4143.638mil|Location2.Y=4187.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5142.654mil|Location2.X=5176.244mil|Location1.Y=4143.638mil|Location2.Y=4187.071mil|Absolute=True">Pad U2-4(131.05mm,105.8mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5217.457mil|Location2.X=5251.047mil|Location1.Y=4143.638mil|Location2.Y=4187.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5217.457mil|Location2.X=5251.047mil|Location1.Y=4143.638mil|Location2.Y=4187.071mil|Absolute=True">Pad U2-6(132.95mm,105.8mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5180.055mil|Location2.X=5213.646mil|Location1.Y=4143.638mil|Location2.Y=4187.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5180.055mil|Location2.X=5213.646mil|Location1.Y=4143.638mil|Location2.Y=4187.071mil|Absolute=True">Pad U2-5(132mm,105.8mm)  Top Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDAOFONC"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Silk to Silk (Clearance=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4953.631mil|Location2.X=4993.307mil|Location1.Y=3996.181mil|Location2.Y=4384.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4953.631mil|Location2.X=4993.307mil|Location1.Y=3996.181mil|Location2.Y=4384.827mil|Absolute=True">Text "GND SDA SCL 5V" (126.676mm,101.657mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4993.307mil|Location2.X=5001.181mil|Location1.Y=3993.307mil|Location2.Y=4401.181mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4993.307mil|Location2.X=5001.181mil|Location1.Y=3993.307mil|Location2.Y=4401.181mil|Absolute=True">Track (126.93mm,101.53mm)(126.93mm,111.69mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4953.631mil|Location2.X=4993.307mil|Location1.Y=3996.181mil|Location2.Y=4384.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4953.631mil|Location2.X=4993.307mil|Location1.Y=3996.181mil|Location2.Y=4384.827mil|Absolute=True">Text "GND SDA SCL 5V" (126.676mm,101.657mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4993.307mil|Location2.X=5101.181mil|Location1.Y=3993.307mil|Location2.Y=4001.181mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4993.307mil|Location2.X=5101.181mil|Location1.Y=3993.307mil|Location2.Y=4001.181mil|Absolute=True">Track (126.93mm,101.53mm)(129.47mm,101.53mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5300.088mil|Location2.X=5339.764mil|Location1.Y=4102.48mil|Location2.Y=4408.475mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5300.088mil|Location2.X=5339.764mil|Location1.Y=4102.48mil|Location2.Y=4408.475mil|Absolute=True">Text "GND VOUT 5V" (135.476mm,104.357mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5339.764mil|Location2.X=5447.638mil|Location1.Y=4099.606mil|Location2.Y=4107.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5339.764mil|Location2.X=5447.638mil|Location1.Y=4099.606mil|Location2.Y=4107.48mil|Absolute=True">Track (135.73mm,104.23mm)(138.27mm,104.23mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5300.088mil|Location2.X=5339.764mil|Location1.Y=4102.48mil|Location2.Y=4408.475mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5300.088mil|Location2.X=5339.764mil|Location1.Y=4102.48mil|Location2.Y=4408.475mil|Absolute=True">Text "GND VOUT 5V" (135.476mm,104.357mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5339.764mil|Location2.X=5347.638mil|Location1.Y=4099.606mil|Location2.Y=4407.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5339.764mil|Location2.X=5347.638mil|Location1.Y=4099.606mil|Location2.Y=4407.48mil|Absolute=True">Track (135.73mm,104.23mm)(135.73mm,111.85mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5300.088mil|Location2.X=5339.764mil|Location1.Y=4102.48mil|Location2.Y=4408.475mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5300.088mil|Location2.X=5339.764mil|Location1.Y=4102.48mil|Location2.Y=4408.475mil|Absolute=True">Text "GND VOUT 5V" (135.476mm,104.357mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5339.764mil|Location2.X=5447.638mil|Location1.Y=4399.606mil|Location2.Y=4407.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5339.764mil|Location2.X=5447.638mil|Location1.Y=4399.606mil|Location2.Y=4407.48mil|Absolute=True">Track (135.73mm,111.85mm)(138.27mm,111.85mm)  Top Overlay</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDABHONC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk primitive without silk layer</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5089.784mil|Location2.X=5665.775mil|Location1.Y=3649.907mil|Location2.Y=4197.568mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5089.784mil|Location2.X=5665.775mil|Location1.Y=3649.907mil|Location2.Y=4197.568mil|Absolute=True">Silk To Board Region Clearance (Out of silkscreen region) : Text "Adapter Header" (126.079mm,99.155mm)  Top Overlay</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5102.418mil|Location2.X=5678.409mil|Location1.Y=4226.478mil|Location2.Y=4774.139mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5102.418mil|Location2.X=5678.409mil|Location1.Y=4226.478mil|Location2.Y=4774.139mil|Absolute=True">Silk To Board Region Clearance (Out of silkscreen region) : Text "Adapter Header" (126.4mm,113.8mm)  Top Overlay</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5249.41mil|Location2.X=5585.478mil|Location1.Y=3781.742mil|Location2.Y=4089.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5249.41mil|Location2.X=5585.478mil|Location1.Y=3781.742mil|Location2.Y=4089.481mil|Absolute=True">Silk To Board Region Clearance (Out of silkscreen region) : Text "Cap Semi" (131.657mm,99.457mm)  Top Overlay</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5319.411mil|Location2.X=5428.886mil|Location1.Y=4427.418mil|Location2.Y=4508.563mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\files9\data\tschui\My Documents\dory\pcb\turbidity.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5319.411mil|Location2.X=5428.886mil|Location1.Y=4427.418mil|Location2.Y=4508.563mil|Absolute=True">Silk To Board Region Clearance (Out of silkscreen region) : Text "P2" (134.874mm,112.725mm)  Top Overlay</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>

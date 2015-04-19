@@ -1,0 +1,9 @@
+Change Component Designator: OldDesignator= NewDesignator=Adapter Header
+Change Component Designator: OldDesignator= NewDesignator=C17
+Change Component Designator: OldDesignator= NewDesignator=C18
+Change Component Designator: OldDesignator= NewDesignator=P2
+Change Component Designator: OldDesignator= NewDesignator=U2
+Added Member To Class: ClassName=Turbidity Member=Component C17 Cap Semi
+Added Member To Class: ClassName=Turbidity Member=Component C18 Cap Semi
+Added Member To Class: ClassName=Turbidity Member=Component P2 Turbidity Header
+Added Member To Class: ClassName=Turbidity Member=Component U2 MCP3425A0T-E/CH

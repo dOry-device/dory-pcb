@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=NetQ2_P1 Pin=Q2-P1
+Added Pin To Net: NetName=NetQ2_P1 Pin=U1-5
+Added Net: Name=NetQ2_P1
+Added Pin To Net: NetName=NetQ2_P2 Pin=Q2-P2
+Added Pin To Net: NetName=NetQ2_P2 Pin=U1-10
+Added Net: Name=NetQ2_P2
+Added Member To Class: ClassName=mainboard Member=Component Q2 32.768kHz
+Added Room: Name=mainboard
