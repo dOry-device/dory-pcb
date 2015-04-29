@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=VCC Pin=C17-1
+Removed Pin From Net: NetName=GND Pin=C17-2
+Removed Pin From Net: NetName=Netferrite bead_2 Pin=gps-3
+Removed Pin From Net: NetName=GND Pin=gps-4
+Removed Pin From Net: NetName=RX_FROM_GPS Pin=R28-2
+Removed Pin From Net: NetName=TX_TO_GPS Pin=R29-2
+Removed Member From Class: ClassName=mainboard Member=R28
+Removed Member From Class: ClassName=mainboard Member=R29
+Change Component DesignItemId : Designator=gps Old DesignItemId=Grove GPS New DesignItemId=GPS Bee Seeedstudio
+Change Component Comment : Designator=gps Old Comment=Grove GPS New Comment=GPS Bee Seeedstudio
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Pin To Net: NetName=VCC Pin=C17-2
+Added Pin To Net: NetName=Netferrite bead_2 Pin=gps-1
+Added Pin To Net: NetName=RX_FROM_GPS Pin=gps-2
+Added Pin To Net: NetName=TX_TO_GPS Pin=gps-3
