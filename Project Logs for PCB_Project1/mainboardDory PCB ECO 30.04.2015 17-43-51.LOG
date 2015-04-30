@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=GND Pin=DISPLAY-GND2
+Added Pin To Net: NetName=TX_TO_GPS Pin=GPS-3
+Added Pin To Net: NetName=GND Pin=GPS-10
