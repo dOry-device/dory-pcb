@@ -1,3 +1,5 @@
 History/*
 __Previews/*
 *.LOG
+*.s#*
+*.b#*
