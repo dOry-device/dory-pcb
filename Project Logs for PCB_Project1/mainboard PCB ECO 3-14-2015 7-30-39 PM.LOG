@@ -1,5 +1,0 @@
-Change Component Comment : Designator=Q2 Old Comment= New Comment=32.768kHz
-Change Component Library : Designator=Q2 Old Library= New Library=microcrystal.IntLib
-Added Member To Class: ClassName=mainboard Member=Component Q2 32.768kHz
-Change Room Name: Old Name=MSP-EXP430F5529LP_0 New Name=mainboard
-Change Room Scope: Old Scope=InComponentClass('MSP-EXP430F5529LP_0') New Scope=InComponentClass('mainboard')
