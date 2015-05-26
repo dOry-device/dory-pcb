@@ -1,4 +1,0 @@
-Added Component: Designator=U?(TI-PN80_N)
-Added Pin To Net: NetName=NetC1_1 Pin=U?-11
-Added Pin To Net: NetName=NetP2_1 Pin=U?-18
-Added Member To Class: ClassName=mainboard Member=Component U? MSP430F5529IPN
