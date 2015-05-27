@@ -3,3 +3,5 @@ __Previews/*
 *.LOG
 *.s#*
 *.b#*
+*.job
+
