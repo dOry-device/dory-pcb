@@ -1,0 +1,28 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~PCB_Project1.PrjPCB|ReportField=ProjectFullPath~\\files9\data\tschui\My Documents\dory\dory-pcb\PCB_Project1.PrjPCB|ReportField=Title~Bill of Materials For PCB Document [mainboardDory.PcbDoc]|ReportField=TotalQuantity~73|ReportField=ReportTime~16:13:30|ReportField=ReportDate~01.06.2015|ReportField=ReportDateTime~01.06.2015 16:13:30|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=DataSourceFileName~mainboardDory.PcbDoc|ReportField=DataSourceFullPath~\\files9\data\tschui\My Documents\dory\dory-pcb\mainboardDory.PcbDoc
+TPS63001DRCR|Buck-Boost Voltage Converter with 1.8 to 5.5 V Input and 3.3 V Output, -40 to 85 degC, 10-Pin SON (DRC), Green (RoHS & no Sb/Br)|3.3V boost converter|DRC10-2400X1650TP|1
+TPS61240DRVT|Boost Voltage Converter with 2.3 to 5.5 V Input and 5 V Output, 6-Pin SON (DRV), Green (RoHS & no Sb/Br)|5V boost converter|DRV6-1600X1000TP|1
+Si7055||AirTemperature|Si7050/3/4/5|1
+BQ24230RGTT|USB Friendly 0.5 A Li+ Charger with Dynamic Power Management, 6.6 V OVP, 4.3 V, -40 to 85 degC, 16-pin QFN (RGT), Green (RoHS & no Sb/Br)|BATT CHARGER|RGT16-1700X1700TP|1
+Header 2|Header, 2-Pin|BATTERY PACK_L, RX/TX|HDR1X2|2
+Header 3|Header, 3-Pin|BATTERY PACK_R|HDR1X3|1
+Cap Semi|Capacitor (Semiconductor SIM Model)|C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C19, C20, C21, C22|1608[0603]|21
+Cap Pol3|Polarized Capacitor (Surface Mount)|C18|C0805|1
+LED2|Typical RED, GREEN, YELLOW, AMBER GaAs LED|D1, D2|3.2X1.6X1.1|2
+Seeed Studio Display Shield||DISPLAY|Display shield|1
+TPD2E001DRYR|Low-Capacitance + / - 15 kV ESD-Protection Array for High-Speed Data Interfaces, 2 Channels, -40 to +85 degC, 6-pin SON (DRY), Green (RoHS & no Sb/Br)|ESD_PROT_I2C, ESD_PROT_USB|DRY6|2
+742861210|SMD EMI Suppression Ferrite Bead WE-CBF HF, Z = 1000 Ohm|ferrite bead|SMD-0603|1
+SST25VF064C-80-4I-S3AE|64 Mbit SPI Serial Flash, 2.7 to 3.6 V, 80 MHz, -40 to 85 degC, 8-pin SOIC (S3A8), Tube|FLASH_MEMORY|MCHP-SOIC-S3A8_M|1
+GPS Bee Seeedstudio||GPS|GPS bee|1
+Jack_5|4 pin 5 contact headphone jack 3.5mm|J1|Jack_5_socket|1
+micro USB|USB 2.0 Standard Micro-USB Connector, Micro AB-Standard (Bottom Mount), 30 V AC, -30 to 85 degC, Right Angle, 5-Pin 7.5 x 5.6 x 2.8 mm SMD, RoHS, Reel|J2|HIRO-ZX62D-AB-5P8_V|1
+Header 2H|Header, 2-Pin, Right Angle|JP3V3, JP5V, JPVSYS|HDR1X2H|3
+Coilcraft 1uH Inductor||L1, L3|COILCRAFT XLF4020 INDUCTOR|2
+PCA9515DP|PCA9515 I2C logic level converter|LogicLevelTranslator|TSOP65P490X110-8N|1
+Header 4|Header, 4-Pin|PROG|HDR1X4|1
+32.768kHz||Q2|MS3V-T1R|1
+CSTCR4M00G15L99|<b>Resonator</b><p>
+Source: murata.co.jp|Q4|CSTCR_G15L|1
+Res3|Resistor|R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27|J1-0603|22
+XBee ZigBee S2C surface mount||rf|S2C XBEE|1
+|Resistor|R_ISET|J1-0603|1
+MSP430F5529IPN|25 MHz Mixed Signal Microcontroller with 128 KB Flash, 8192 B SRAM and 63 GPIOs, -40 to 85 degC, 80-pin QFP (PN), Green (RoHS & no Sb/Br)|U1|TI-PN80_N|1
