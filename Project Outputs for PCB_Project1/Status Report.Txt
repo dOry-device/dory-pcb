@@ -1,12 +1,11 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [PCB_Project1.PrjPCB]
-   Generated File[mainboard.TXT]
-   Generated File[mainboard.LDP]
-   Generated File[mainboard.DRR]
+Output: Simple BOM
+Type  : SimpleBOM
+From  : Variant [[No Variations]] of Project [PCB_Project1.PrjPCB]
+   Generated File[mainboardDory.BOM]
+   Generated File[mainboardDory.CSV]
 
 
-Files Generated   : 3
+Files Generated   : 2
 Documents Printed : 0
 
-Finished Output Generation At 6:12:24 PM On 3/14/2015
+Finished Output Generation At 16:10:20 On 01.06.2015
