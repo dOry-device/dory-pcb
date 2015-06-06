@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<TComponentSet id="0" CurrentRevColumnWidth="100" NameColumnWidth="157" NextRevColumnWidth="100">
+  <LifeCycleDefinitionGUID>36FD2F71-F33E-4628-994A-0C82C0197C5F</LifeCycleDefinitionGUID>
+  <RevisionNamingSchemeGUID>CE4B36C7-F2D7-49B0-AA3A-E3B6D3276818</RevisionNamingSchemeGUID>
+  <VaultGUID>B7D15EC3-160A-466F-A46C-7801FE6295A7</VaultGUID>
+  <VaultName>Altium Content Vault</VaultName>
+  <RequiredParameters>
+    <TRequiredParameter id="1" ColumnWidth="50">
+      <HRID>Channels (#)</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="2" ColumnWidth="50">
+      <HRID>Comment</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="3" ColumnWidth="50">
+      <HRID>ComponentLink1Description</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="4" ColumnWidth="50">
+      <HRID>ComponentLink1URL</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="5" ColumnWidth="50">
+      <HRID>ComponentLink2Description</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="6" ColumnWidth="50">
+      <HRID>ComponentLink2URL</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="7" ColumnWidth="50">
+      <HRID>DatasheetVersion</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="8" ColumnWidth="50">
+      <HRID>Description</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="9" ColumnWidth="50">
+      <HRID>GBW (MHz) Typical</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="10" ColumnWidth="50">
+      <HRID>Is (mA) Typical</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="11" ColumnWidth="50">
+      <HRID>Linear Technology Part Number</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="12" ColumnWidth="50">
+      <HRID>Manufacturer</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="13" ColumnWidth="50">
+      <HRID>Mounting Technology</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="14" ColumnWidth="50">
+      <HRID>PackageDescription</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="15" ColumnWidth="50">
+      <HRID>PackageReference</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="16" ColumnWidth="50">
+      <HRID>PackageVersion</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="17" ColumnWidth="50">
+      <HRID>Packing</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="18" ColumnWidth="50">
+      <HRID>PartNumber</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="19" ColumnWidth="50">
+      <HRID>SR (V/us) Typical</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="20" ColumnWidth="50">
+      <HRID>Type</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="21" ColumnWidth="50">
+      <HRID>Vos (mV) Typical</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="22" ColumnWidth="50">
+      <HRID>Vs Max (V)</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="23" ColumnWidth="56">
+      <HRID>Vs Min (V)</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+  </RequiredParameters>
+  <RequiredModels>
+    <TRequiredModel id="24" ColumnWidth="70">
+      <HRID>PCBLIB</HRID>
+      <Visible>true</Visible>
+      <ModelKind>PCBLIB</ModelKind>
+    </TRequiredModel>
+    <TRequiredModel id="25" ColumnWidth="70">
+      <HRID>SCHLIB</HRID>
+      <Visible>true</Visible>
+      <ModelKind>SCHLIB</ModelKind>
+    </TRequiredModel>
+    <TRequiredModel id="26" ColumnWidth="85">
+      <HRID>SIM</HRID>
+      <Visible>true</Visible>
+      <ModelKind>SIM</ModelKind>
+    </TRequiredModel>
+  </RequiredModels>
+  <ModelLinks>
+    <TModelLink id="27">
+      <HRID>PCC-0155-00011-1</HRID>
+      <VaultGUID>B7D15EC3-160A-466F-A46C-7801FE6295A7</VaultGUID>
+      <ItemGUID>F68010C6-33CB-4993-9242-3ADEE3F02D26</ItemGUID>
+      <ModelKind>PCBLIB</ModelKind>
+      <RevisionGUID>402D2F05-091D-4E2F-901B-4C7724A6C6A9</RevisionGUID>
+      <RevisionId>1</RevisionId>
+    </TModelLink>
+    <TModelLink id="28">
+      <HRID>SYM-0123-00112-1</HRID>
+      <VaultGUID>B7D15EC3-160A-466F-A46C-7801FE6295A7</VaultGUID>
+      <ItemGUID>800DE231-DC49-4CE1-B33F-38FA03FA2655</ItemGUID>
+      <ModelKind>SCHLIB</ModelKind>
+      <RevisionGUID>E219E52B-57B4-4238-8B15-B4D3075190A5</RevisionGUID>
+      <RevisionId>1</RevisionId>
+    </TModelLink>
+  </ModelLinks>
+  <PartChoiceListLinks StateIndex="2">
+    <ComponentSet href="#0"/>
+  </PartChoiceListLinks>
+  <TopGroup id="29" StateIndex="2" Collapsed="false">
+    <HRID>Operational Amplifiers</HRID>
+    <GUID>04733E68-551F-411E-8229-A29718F9F952</GUID>
+    <Parameters/>
+    <ModelChoices/>
+    <ComponentSet href="#0"/>
+    <Groups/>
+    <ComponentDefinitions>
+      <TComponentDefinition StateIndex="2">
+        <HRID>CMP-0359-00930</HRID>
+        <GUID>127F7B4C-8670-401F-B8DE-B961D735759C</GUID>
+        <ParentGroup href="#29"/>
+        <Parameters>
+          <TParameter>
+            <RequiredParameter href="#2"/>
+            <Value>LTC2055IMS8#TR</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#8"/>
+            <Value>Dual Channel, Micropower Zero-Drift Operational Amplifier, 0.5 MHz Typical GBW, 0.5 V/us Typical SR, 2.7 to 6 V, 8-Pin SOP (MS8-8), Industrial, Reel</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#14"/>
+            <Value>8-Lead Plastic Small Outline, Body 3.9 x 4.9 mm, Pitch 1.27 mm</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#6"/>
+            <Value>http://cds.linear.com/docs/Packaging/05081610_G_SO8.pdf</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#22"/>
+            <Value>6</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#21"/>
+            <Value>0.0005</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#1"/>
+            <Value>2</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#23"/>
+            <Value>2.7</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#4"/>
+            <Value>http://cds.linear.com/docs/Datasheet/20545fc.pdf</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#16"/>
+            <Value>Rev G</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#7"/>
+            <Value>Rev. C</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#10"/>
+            <Value>0.135</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#20"/>
+            <Value>ZD</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#17"/>
+            <Value>Reel</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#19"/>
+            <Value>0.5</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#15"/>
+            <Value>LT-MS8-8</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#5"/>
+            <Value>Package Specification</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#12"/>
+            <Value>Linear Technology</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#3"/>
+            <Value>Datasheet</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#13"/>
+            <Value>Surface Mount</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#9"/>
+            <Value>0.5</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#18"/>
+            <Value>LTC2055IMS8#TR</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#11"/>
+            <Value>LTC2055</Value>
+          </TParameter>
+        </Parameters>
+        <ModelChoices>
+          <TModelChoice>
+            <RequiredModel href="#24"/>
+            <ModelLink href="#27"/>
+          </TModelChoice>
+          <TModelChoice>
+            <RequiredModel href="#25"/>
+            <ModelLink href="#28"/>
+          </TModelChoice>
+        </ModelChoices>
+        <ItemHRID>CMP-0359-00930</ItemHRID>
+        <RevisionGUID>E4136DB5-5AEE-424A-8CE0-78B6ABB1A335</RevisionGUID>
+        <RevisionId>2</RevisionId>
+      </TComponentDefinition>
+    </ComponentDefinitions>
+  </TopGroup>
+  <ShowReleaseState>false</ShowReleaseState>
+</TComponentSet>
