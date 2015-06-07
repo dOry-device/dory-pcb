@@ -1,0 +1,14 @@
+Protel Design System Design Rule Check
+PCB File : \\files9\data\tschui\My Documents\dory\dory-pcb\mainboardDory.PcbDoc
+Date     : 07.06.2015
+Time     : 14:13:13
+
+Processing Rule : Matched Net Lengths(Tolerance=100mil) (InDifferentialPair ('USBD') Or InDifferentialPair ('USB'))
+Rule Violations :0
+
+Processing Rule : Matched Net Lengths(Tolerance=100mil) (InDifferentialPairClass('DIFF100'))
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:00

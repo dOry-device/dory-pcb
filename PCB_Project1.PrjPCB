@@ -132,114 +132,118 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [GeneratedDocument1]
-DocumentPath=dorySchlib.rep
+DocumentPath=Project Outputs for PCB_Project1\Design Rule Check - mainboardDory.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.1
+DocumentPath=dorySchlib.rep
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.2
+DocumentPath=Project Outputs for PCB_Project1\mainboard.1
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.3
+DocumentPath=Project Outputs for PCB_Project1\mainboard.2
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.DRR
+DocumentPath=Project Outputs for PCB_Project1\mainboard.3
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.EXTREP
+DocumentPath=Project Outputs for PCB_Project1\mainboard.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.G1
+DocumentPath=Project Outputs for PCB_Project1\mainboard.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.G2
+DocumentPath=Project Outputs for PCB_Project1\mainboard.G1
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GBL
+DocumentPath=Project Outputs for PCB_Project1\mainboard.G2
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GBO
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GBP
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GBS
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GD1
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GKO
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GM1
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GM13
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GM15
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GML
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GPB
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GML
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GPT
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GTL
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GTO
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GTP
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.GTS
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.LDP
+DocumentPath=Project Outputs for PCB_Project1\mainboard.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.REP
+DocumentPath=Project Outputs for PCB_Project1\mainboard.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for PCB_Project1\mainboard.RUL
+DocumentPath=Project Outputs for PCB_Project1\mainboard.REP
 DItemRevisionGUID=
 
 [GeneratedDocument28]
+DocumentPath=Project Outputs for PCB_Project1\mainboard.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument29]
 DocumentPath=Project Outputs for PCB_Project1\mainboard.TXT
 DItemRevisionGUID=
 
@@ -352,7 +356,7 @@ OutputDefault3=0
 [OutputGroup3]
 Name=Documentation Outputs
 Description=
-TargetPrinter=Xerox Phaser 6180MFP-D PS (redirected 8)
+TargetPrinter=Xerox Phaser 6180MFP-D PS (redirected 3)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Assembler Source Print
 OutputName1=Assembler Source Prints
@@ -544,7 +548,7 @@ Configuration10_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLaye
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Xerox Phaser 6180MFP-D PS (redirected 8)
+TargetPrinter=Xerox Phaser 6180MFP-D PS (redirected 3)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Script
 OutputName1=Script Output
