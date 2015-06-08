@@ -1,42 +1,33 @@
-Field=Comment~String~Comment~107|Field=ComponentLink1URL~String~ComponentLink1URL~134|Field=Description~String~Description~107|Field=Designator~String~Designator~107|Field=Footprint~String~Footprint~107|Field=LibRef~String~LibRef~107|Field=Quantity~Integer~Quantity~70|Field=Value~String~Value~145|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~PCB_Project1.PrjPCB|ReportField=ProjectFullPath~\\files9\data\tschui\My Documents\dory\dory-pcb\PCB_Project1.PrjPCB|ReportField=Title~Bill of Materials For Project [PCB_Project1.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~73|ReportField=ReportTime~16:07:58|ReportField=ReportDate~01.06.2015|ReportField=ReportDateTime~01.06.2015 16:07:58|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~28.05.2015|ReportField=CurrentTime~16:05:20|ReportField=Date~|ReportField=DocumentFullPathAndName~\\files9\data\tschui\My Documents\dory\dory-pcb\mainboard.SchDoc|ReportField=DocumentName~mainboard.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~26.05.2015|ReportField=Organization~|ReportField=PageSetup~Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=0.73|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A3|PaperIndex=8|ReportField=ProjectName~PCB_Project1.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~PCB_Project1.PrjPCB|ReportField=DataSourceFullPath~\\files9\data\tschui\My Documents\dory\dory-pcb\PCB_Project1.PrjPCB
-TPS63001DRCR|http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS63001&fileType=pdf|Buck-Boost Voltage Converter with 1.8 to 5.5 V Input and 3.3 V Output, -40 to 85 degC, 10-Pin SON (DRC), Green (RoHS & no Sb/Br)|3.3V boost converter|DRC10-2400X1650TP|CMP-0345-00006-1|1|
-TPS61240DRVT|http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS61240&fileType=pdf|Boost Voltage Converter with 2.3 to 5.5 V Input and 5 V Output, 6-Pin SON (DRV), Green (RoHS & no Sb/Br)|5V boost converter|DRV6-1600X1000TP|CMP-0343-00063-1|1|
-Si7055|||AirTemperature|Si7050/3/4/5|Si7055|1|
-BQ24230RGTT|http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=BQ24230&fileType=pdf|USB Friendly 0.5 A Li+ Charger with Dynamic Power Management, 6.6 V OVP, 4.3 V, -40 to 85 degC, 16-pin QFN (RGT), Green (RoHS & no Sb/Br)|BATT CHARGER|RGT16-1700X1700TP|CMP-0321-00264-1|1|
-Header 2||Header, 2-Pin|BATTERY PACK_L, RX/TX|HDR1X2|Header 2|2|
-Header 3||Header, 3-Pin|BATTERY PACK_R|HDR1X3|Header 3|1|
-Cap Semi||Capacitor (Semiconductor SIM Model)|C1, C4, C5, C6|1608[0603]|Cap Semi|4|4.7uF
-Cap Semi||Capacitor (Semiconductor SIM Model)|C2|1608[0603]|Cap Semi|1|2.2uF
-Cap Semi||Capacitor (Semiconductor SIM Model)|C3|1608[0603]|Cap Semi|1|1uF
-Cap Semi||Capacitor (Semiconductor SIM Model)|C7, C10, C11, C13, C17, C20, C21, C22|1608[0603]|Cap Semi|8|100nF
-Cap Semi||Capacitor (Semiconductor SIM Model)|C8, C9|1608[0603]|Cap Semi|2|10pF 10%
-Cap Semi||Capacitor (Semiconductor SIM Model)|C12, C14|1608[0603]|Cap Semi|2|12pF
-Cap Semi||Capacitor (Semiconductor SIM Model)|C15, C19|1608[0603]|Cap Semi|2|220nF
-Cap Semi||Capacitor (Semiconductor SIM Model)|C16|1608[0603]|Cap Semi|1|470nF
-Cap Pol3||Polarized Capacitor (Surface Mount)|C18|C0805|Cap Pol3|1|4.7uF
-LED2||Typical RED, GREEN, YELLOW, AMBER GaAs LED|D1, D2|3.2X1.6X1.1|LED2|2|
-Seeed Studio Display Shield|||DISPLAY|Display shield|Seeed Studio Display Shield|1|
-TPD2E001DRYR|http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD2E001&fileType=pdf|Low-Capacitance + / - 15 kV ESD-Protection Array for High-Speed Data Interfaces, 2 Channels, -40 to +85 degC, 6-pin SON (DRY), Green (RoHS & no Sb/Br)|ESD_PROT_I2C, ESD_PROT_USB|DRY6|CMP-0326-00025-1|2|
-742861210|http://www.we-online.com|SMD EMI Suppression Ferrite Bead WE-CBF HF, Z = 1000 Ohm|ferrite bead|SMD-0603|CMP-0220-00121-1|1|
-SST25VF064C-80-4I-S3AE|http://www.microchip.com|64 Mbit SPI Serial Flash, 2.7 to 3.6 V, 80 MHz, -40 to 85 degC, 8-pin SOIC (S3A8), Tube|FLASH_MEMORY|MCHP-SOIC-S3A8_M|CMP-0378-00064-1|1|
-GPS Bee Seeedstudio|||GPS|GPS bee|GPS Bee Seeedstudio|1|
-Jack_5||4 pin 5 contact headphone jack 3.5mm|J1|Jack_5_socket|Jack_5|1|
-micro USB|http://www.hirose.com/|USB 2.0 Standard Micro-USB Connector, Micro AB-Standard (Bottom Mount), 30 V AC, -30 to 85 degC, Right Angle, 5-Pin 7.5 x 5.6 x 2.8 mm SMD, RoHS, Reel|J2|HIRO-ZX62D-AB-5P8_V|CMP-1349-00001-1|1|
-Header 2H||Header, 2-Pin, Right Angle|JP3V3, JP5V, JPVSYS|HDR1X2H|Header 2H|3|
-Coilcraft 1uH Inductor|||L1, L3|COILCRAFT XLF4020 INDUCTOR|Coilcraft 1uH Inductor|2|
-PCA9515DP||PCA9515 I2C logic level converter|LogicLevelTranslator|TSOP65P490X110-8N|PCA9515DP|1|
-Header 4||Header, 4-Pin|PROG|HDR1X4|Header 4|1|
-32.768kHz|||Q2|MS3V-T1R|MS3V-T1R|1|
-CSTCR4M00G15L99||<b>Resonator</b><p>
-Source: murata.co.jp|Q4|CSTCR_G15L|MURATA-FILTER_CSTCR|1|
-Res3||Resistor|R1, R4, R6, R18, R25, R26, R27|J1-0603|Res3|7|10K
-Res3||Resistor|R2, R3|J1-0603|Res3|2|1K
-Res3||Resistor|R5|J1-0603|Res3|1|18k
-Res3||Resistor|R7, R8, R9, R10|J1-0603|Res3|4|4k7
-Res3||Resistor|R16, R17|J1-0603|Res3|2|27R
-Res3||Resistor|R19|J1-0603|Res3|1|1.4k 1%
-Res3||Resistor|R20|J1-0603|Res3|1|1M
-Res3||Resistor|R21, R22, R23, R24|J1-0603|Res3|4|0R
-XBee ZigBee S2C surface mount|||rf|S2C XBEE|XBee ZigBee S2C surface mount|1|
-||Resistor|R_ISET|J1-0603|Res3|1|3k
-MSP430F5529IPN|http://www.ti.com/|25 MHz Mixed Signal Microcontroller with 128 KB Flash, 8192 B SRAM and 63 GPIOs, -40 to 85 degC, 80-pin QFP (PN), Green (RoHS & no Sb/Br)|U1|TI-PN80_N|CMP-0365-00412-1|1|
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~PCB_Project1.PrjPCB|ReportField=ProjectFullPath~\\files9\data\tschui\My Documents\dory\dory-pcb\PCB_Project1.PrjPCB|ReportField=Title~Bill of Materials For Project [PCB_Project1.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~88|ReportField=ReportTime~21:18:58|ReportField=ReportDate~07.06.2015|ReportField=ReportDateTime~07.06.2015 21:18:58|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~07.06.2015|ReportField=CurrentTime~21:18:48|ReportField=Date~|ReportField=DocumentFullPathAndName~\\files9\data\tschui\My Documents\dory\dory-pcb\mainboard.SchDoc|ReportField=DocumentName~mainboard.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~07.06.2015|ReportField=Organization~|ReportField=PageSetup~Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=0.73|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A3|PaperIndex=8|ReportField=ProjectName~PCB_Project1.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~PCB_Project1.PrjPCB|ReportField=DataSourceFullPath~\\files9\data\tschui\My Documents\dory\dory-pcb\PCB_Project1.PrjPCB
+Battery|Multicell Battery|BT1|BAT-2|Battery|1
+Cap Semi|Capacitor (Semiconductor SIM Model)|C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24|1608[0603]|Cap Semi|24
+Seeed Studio Display Shield||DISPLAY|Display shield|Seeed Studio Display Shield|1
+TLSU1008A(T04)|LED, Red 0603 (1608) 63mCd|DS1|TOSH-0603LED_RED_V|CMP-0444-00001-1|1
+GPS Bee Seeedstudio||GPS|GPS bee|GPS Bee Seeedstudio|1
+GPS_ant_dummy||GPS_antenna|GPS_ant_dummy|GPS_ant_dummy|1
+TPS63001DRCR|Buck-Boost Voltage Converter with 1.8 to 5.5 V Input and 3.3 V Output, -40 to 85 degC, 10-Pin SON (DRC), Green (RoHS & no Sb/Br)|IC1|DRC10-2400X1650TP|CMP-0345-00006-1|1
+TPS61240DRVT|Boost Voltage Converter with 2.3 to 5.5 V Input and 5 V Output, 6-Pin SON (DRV), Green (RoHS & no Sb/Br)|IC2|DRV6-1600X1000TP|CMP-0343-00063-1|1
+Jack_6|4 pin 6 contact headphone jack 3.5mm|J1|Jack_6_socket|Jack_6|1
+micro USB|USB 2.0 Standard Micro-USB Connector, Micro AB-Standard (Bottom Mount), 30 V AC, -30 to 85 degC, Right Angle, 5-Pin 7.5 x 5.6 x 2.8 mm SMD, RoHS, Reel|J2|HIRO-ZX62D-AB-5P8_V|CMP-1349-00001-1|1
+Header 2H|Header, 2-Pin, Right Angle|JP3V3, JP5V|HDR1X2H|Header 2H|2
+SRU2013-2R2Y|Power Inductor, 2.2 µH, 1.45 Irms Max(A), SMD|L1|BOUR-SRU2013-2R2Y-2_V|CMP-0462-00001-2|1
+SRU2013-1R0Y|Power Inductor, 2.2 µH, 1.45 Irms Max(A), SMD|L2|BOUR-SRU2013-2R2Y-2_V|CMP-0462-00001-2|1
+742861210|SMD EMI Suppression Ferrite Bead WE-CBF HF, Z = 1000 Ohm|L3|SMD-0603|CMP-0220-00121-1|1
+mounting hole||M1, M2, M3, M4|MOUNTING_HOLE|mounting_hole|4
+Header 4|Header, 4-Pin|PROG|HDR1X4|Header 4|1
+Res3|Resistor|R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R17, R18, R20, R21, R22, R23, R24, R25, R26, R27, R110, R111, R112|J1-0603|Res3|28
+Should be 27R according to TI specs|Resistor|R16|J1-0603|Res3|1
+h|Resistor|R19, R28, R29|J1-0603|Res3|3
+XBee ZigBee S2C surface mount||rf|S2C XBEE|XBee ZigBee S2C surface mount|1
+Header 2|Header, 2-Pin|RX/TX|HDR1X2|Header 2|1
+SW-PB|Switch|S1|SPST-2|SW-PB|1
+Si7055||Temp|Si7050/3/4/5|Si7055|1
+MSP430F5529IPN|25 MHz Mixed Signal Microcontroller with 128 KB Flash, 8192 B SRAM and 63 GPIOs, -40 to 85 degC, 80-pin QFP (PN), Green (RoHS & no Sb/Br)|U1|TI-PN80_N|CMP-0365-00412-1|1
+MAX1555EZK-T|Dual-Input USB/AC Adapter 1-Cell Li+ Battery Charger, 4.2 V Charger Voltage, 0.28 A DC Charging Current, 5-Pin SOT23 Package, Tape and Reel|U2|MAXM-Z5-1_N|CMP-0246-00653-1|1
+LTC2953IDD-1#PBF|Push Button On / Off Controller with Voltage Monitoring, 12-pin SON (DD-12), -40 to 85 degC, Pb-Free|U3|LT-DD-12_V|CMP-0482-00128-1|1
+PCA9515DP|PCA9515 I2C logic level converter|U4|TSOP65P490X110-8N|PCA9515DP|1
+TPD2E001DRYR|Low-Capacitance + / - 15 kV ESD-Protection Array for High-Speed Data Interfaces, 2 Channels, -40 to +85 degC, 6-pin SON (DRY), Green (RoHS & no Sb/Br)|U5, U6|DRY6|CMP-0326-00025-1|2
+SST25VF064C-80-4I-S3AE|64 Mbit SPI Serial Flash, 2.7 to 3.6 V, 80 MHz, -40 to 85 degC, 8-pin SOIC (S3A8), Tube|U7|MCHP-SOIC-S3A8_M|CMP-0378-00064-1|1
+FC - 12M 32.768kHz crystal|Epson FC - 12M|X1|FC-12M|FC - 12M 32.768kHz crystal|1
+CSTCR4M00G15L99|<b>Resonator</b><p>
+Source: murata.co.jp|X2|CSTCR_G15L|MURATA-FILTER_CSTCR|1

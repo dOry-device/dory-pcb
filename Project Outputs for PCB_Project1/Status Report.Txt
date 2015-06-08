@@ -1,11 +1,9 @@
-Output: Simple BOM
-Type  : SimpleBOM
+Output: Bill of Materials
+Type  : BOM
 From  : Variant [[No Variations]] of Project [PCB_Project1.PrjPCB]
-   Generated File[mainboardDory.BOM]
-   Generated File[mainboardDory.CSV]
 
 
-Files Generated   : 2
+Files Generated   : 0
 Documents Printed : 0
 
-Finished Output Generation At 16:10:20 On 01.06.2015
+Finished Output Generation At 21:23:48 On 07.06.2015
