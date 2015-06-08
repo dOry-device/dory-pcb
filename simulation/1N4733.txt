@@ -1,0 +1,7 @@
+* 1N4733    5.1 Volt 65% 1W zener diode
+.model D1N4733  D(Is=1.214f Rs=1.078 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=185p M=.3509
++               Vj=.75 Fc=.5 Isr=2.601n Nr=2 Bv=5.1 Ibv=.70507 Nbv=.74348
++               Ibvl=4.8274m Nbvl=6.7393 Tbv1=176.471u)
+*               Motorola        pid=1N4733      case=DO-41
+*               89-9-19 gjg
+*               Vz = 5.1 @ 49mA, Zz = 175 @ 1mA, Zz = 8.2 @ 5mA, Zz = 2.2 @ 20mA
