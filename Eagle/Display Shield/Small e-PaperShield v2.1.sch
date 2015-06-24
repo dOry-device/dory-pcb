@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -90,8 +90,13 @@
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -104,6 +109,7 @@
 <layer number="130" name="130bmp" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="DrillLegend" color="7" fill="1" visible="no" active="no"/>
 <layer number="145" name="DrillLegend_01-16" color="2" fill="9" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
@@ -138,6 +144,12 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="no"/>
 <layer number="231" name="Eagle3D_PG1" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="14" fill="2" visible="yes" active="yes"/>
 <layer number="233" name="Eagle3D_PG3" color="14" fill="4" visible="yes" active="yes"/>
@@ -146,6 +158,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
+<layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -9218,6 +9231,55 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-OPL-Connector">
+<packages>
+<package name="H3-SMD-2.54">
+<wire x1="-1.27" y1="7.62" x2="1.27" y2="7.62" width="0.127" layer="21"/>
+<wire x1="1.27" y1="7.62" x2="1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="7.62" width="0.127" layer="21"/>
+<smd name="3" x="1.27" y="1.27" dx="3.048" dy="1.524" layer="1" roundness="50"/>
+<smd name="2" x="-1.27" y="3.81" dx="3.048" dy="1.524" layer="1" roundness="50"/>
+<smd name="1" x="1.27" y="6.35" dx="3.048" dy="1.524" layer="1"/>
+<text x="-3.175" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;name</text>
+<text x="3.81" y="-1.905" size="0.889" layer="27" ratio="11" rot="R90">&gt;value</text>
+<text x="0" y="-5.08" size="0.889" layer="33" ratio="10" rot="R90">&gt;name</text>
+<rectangle x1="-1.27" y1="0" x2="1.27" y2="7.62" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="HEADER-3P">
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<text x="-1.27" y="6.35" size="1.27" layer="96" ratio="10">&gt;value</text>
+<text x="-7.62" y="6.35" size="1.27" layer="95" ratio="10">&gt;name</text>
+<pin name="P$1" x="-7.62" y="3.81" visible="pad" length="middle" function="dotclk" swaplevel="1"/>
+<pin name="P$2" x="-7.62" y="0" visible="pad" length="middle" swaplevel="1"/>
+<pin name="P$3" x="-7.62" y="-3.81" visible="pad" length="middle" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMD-BLUE-MALE-HEADER-R/A(3P-2.54)">
+<gates>
+<gate name="G$1" symbol="HEADER-3P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H3-SMD-2.54">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9246,7 +9308,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C28" library="Discrete" deviceset="C*" device="-0603" value="100nF"/>
 <part name="U$6" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$7" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="U$8" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U3" library="IC" deviceset="74V*125" device="PW" technology="HC"/>
 <part name="J2" library="OPL-NEW" deviceset="3300060P1-ST-TF-003A" device=""/>
 <part name="U$10" library="Power or GND " deviceset="GND_POWER" device=""/>
@@ -9353,7 +9414,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$45" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$46" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="J3" library="Connector" deviceset="HEADER-8P" device="-2.54-SMD" value="2.54-8p-male-SMD"/>
-<part name="J4" library="Connector" deviceset="HEADER-8P" device="-2.54-SMD" value="2.54-8p-male-SMD"/>
 <part name="J5" library="Connector" deviceset="HEADER-6P" device="-SMD" value="2.54-6p-male-SMD"/>
 <part name="J6" library="Connector" deviceset="HEADER-6P" device="-SMD" value="2.54-6p-male-SMD"/>
 <part name="J7" library="Connector" deviceset="HEADER-2X3P" device="-SMD" value="2.54-2x3p-female-SMD"/>
@@ -9381,6 +9441,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R15" library="Discrete" deviceset="R*" device="-0603" value="10k"/>
 <part name="R17" library="Discrete" deviceset="R*" device="-0603" value="10k"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M05" device="PTH_LONGPADS"/>
+<part name="U$1" library="Seeed-OPL-Connector" deviceset="SMD-BLUE-MALE-HEADER-R/A(3P-2.54)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9415,7 +9476,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C28" gate="C" x="-186.69" y="105.41" rot="R90"/>
 <instance part="U$6" gate="G$1" x="-215.9" y="96.52"/>
 <instance part="U$7" gate="G$1" x="445.77" y="71.12"/>
-<instance part="U$8" gate="G$1" x="435.61" y="142.24" rot="R180"/>
 <instance part="U3" gate="A" x="38.1" y="147.32"/>
 <instance part="U3" gate="PWR" x="38.1" y="158.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.21" y="163.83" size="1.778" layer="95"/>
@@ -9599,7 +9659,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$45" gate="G$1" x="-139.7" y="73.66"/>
 <instance part="U$46" gate="G$1" x="-55.88" y="154.94" rot="R270"/>
 <instance part="J3" gate="J" x="464.82" y="129.54" rot="R270"/>
-<instance part="J4" gate="J" x="441.96" y="129.54" rot="R270"/>
 <instance part="J5" gate="J" x="467.36" y="83.82" rot="R90"/>
 <instance part="J6" gate="J" x="444.5" y="83.82" rot="MR90"/>
 <instance part="J7" gate="J" x="502.92" y="138.43" rot="R270"/>
@@ -9666,6 +9725,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="R15" gate="R" x="297.18" y="106.68" rot="MR0"/>
 <instance part="R17" gate="R" x="295.91" y="81.28" rot="MR0"/>
 <instance part="JP1" gate="G$1" x="345.44" y="160.02" rot="R180"/>
+<instance part="U$1" gate="G$1" x="447.04" y="129.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9705,11 +9765,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="U$7" gate="G$1" pin="GND"/>
 <pinref part="J6" gate="J" pin="2"/>
 <pinref part="J6" gate="J" pin="3"/>
-</segment>
-<segment>
-<wire x1="435.61" y1="137.16" x2="435.61" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GND"/>
-<pinref part="J4" gate="J" pin="7"/>
 </segment>
 <segment>
 <pinref part="U3" gate="C" pin="!OE"/>
@@ -10047,9 +10102,9 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="M_EPD_DISCHARGE" class="0">
 <segment>
-<wire x1="450.85" y1="137.16" x2="450.85" y2="142.24" width="0.1524" layer="91"/>
 <label x="450.85" y="143.51" size="1.27" layer="95" ratio="10" rot="R90"/>
-<pinref part="J4" gate="J" pin="1"/>
+<wire x1="450.85" y1="142.24" x2="450.85" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <wire x1="-36.83" y1="154.94" x2="-31.75" y2="154.94" width="0.1524" layer="91"/>
@@ -10546,9 +10601,10 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="M_/EPD_CS" class="0">
 <segment>
-<wire x1="445.77" y1="137.16" x2="445.77" y2="142.24" width="0.1524" layer="91"/>
 <label x="445.77" y="143.51" size="1.27" layer="95" ratio="10" rot="R90"/>
-<pinref part="J4" gate="J" pin="3"/>
+<wire x1="443.23" y1="139.7" x2="443.23" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="443.23" y1="139.7" x2="443.23" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$3"/>
 </segment>
 <segment>
 <pinref part="U4" gate="D" pin="A"/>
@@ -10558,9 +10614,9 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="M_/WORD_STOCK_CS" class="0">
 <segment>
-<wire x1="448.31" y1="137.16" x2="448.31" y2="142.24" width="0.1524" layer="91"/>
 <label x="448.31" y="143.51" size="1.27" layer="95" ratio="10" rot="R90"/>
-<pinref part="J4" gate="J" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<wire x1="447.04" y1="142.24" x2="447.04" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="B" pin="!OE"/>
@@ -11225,6 +11281,11 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="321.31" y1="43.18" x2="321.31" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<wire x1="450.85" y1="137.16" x2="450.85" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
