@@ -1,0 +1,12 @@
+Bill of Material for 
+On 18.06.2015 at 18:11:47
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ 742861210           SMD-0603         1    L1                           SMD EMI Suppression Ferrite Bead WE-CBF HF, Z = 1000 Ohm 
+ Adapter Header      Adapter Header    1    Adapter Header               Header, 4-Pin        
+ Cap Semi            1608[0603]       2    C1, C2                       Capacitor (Semiconductor SIM Model) 
+ MCP3425A0T-E/CH     SOT-23-CH6_M     1    U1                           16-Bit Analog-to-Digital Converter with I2C Interface and On-Board Reference, 6-Pin SOT-23, Extended Temperature, Tape and Reel 
+ mounting hole       MOUNTING_HOLE    1    M                                                 
+ Res3                J1-0603          2    R1, R2                       Resistor             
+ Turbidity Header    TURBIDITY HEADER    1    P2                           Header, 3-Pin        
