@@ -1,21 +1,12 @@
-Output: Gerber Files
-Type  : Gerber
-From  : Variant [[No Variations]] of Project [Turbidity.PrjPcb]
-   Generated File[turbidity.GTL]
-   Generated File[turbidity.GBL]
-   Generated File[turbidity.GTO]
-   Generated File[turbidity.GTP]
-   Generated File[turbidity.GTS]
-   Generated File[turbidity.GBS]
-   Generated File[turbidity.GBP]
-   Generated File[turbidity.GBO]
-   Generated File[turbidity.GM2]
-   Generated File[turbidity.RUL]
-   Generated File[turbidity.EXTREP]
-   Generated File[turbidity.REP]
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Turbidity.PrjPcb]
+   Generated File[turbidity.TXT]
+   Generated File[turbidity.LDP]
+   Generated File[turbidity.DRR]
 
 
-Files Generated   : 12
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 14:04:03 On 02.07.2015
+Finished Output Generation At 17:11:08 On 02.07.2015

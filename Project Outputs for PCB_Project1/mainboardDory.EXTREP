@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: mainboardDory.GBR   01.07.2015  21:00:27
+Gerber File Extension Report For: mainboardDory.GBR   02.07.2015  17:04:17
 ------------------------------------------------------------------------------------------
 
 
@@ -14,11 +14,6 @@ Layer Extension     Layer Description
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
-.GM1                Mechanical 1                            
 .GM2                Mechanical 2                            
-.GM3                Mechanical 3                            
-.GM7                Mechanical 7                            
-.GM13               Mechanical 13                           
-.GM15               Mechanical 15                           
 .GG1                Drill Guide                             
 ------------------------------------------------------------------------------------------
