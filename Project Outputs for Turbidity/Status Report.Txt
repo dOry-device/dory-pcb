@@ -1,9 +1,21 @@
-Output: Bill of Materials
-Type  : BOM
+Output: Gerber Files
+Type  : Gerber
 From  : Variant [[No Variations]] of Project [Turbidity.PrjPcb]
+   Generated File[turbidity.GTL]
+   Generated File[turbidity.GBL]
+   Generated File[turbidity.GTO]
+   Generated File[turbidity.GTP]
+   Generated File[turbidity.GTS]
+   Generated File[turbidity.GBS]
+   Generated File[turbidity.GBP]
+   Generated File[turbidity.GBO]
+   Generated File[turbidity.GM2]
+   Generated File[turbidity.RUL]
+   Generated File[turbidity.EXTREP]
+   Generated File[turbidity.REP]
 
 
-Files Generated   : 0
+Files Generated   : 12
 Documents Printed : 0
 
-Finished Output Generation At 18:16:21 On 18.06.2015
+Finished Output Generation At 14:04:03 On 02.07.2015
