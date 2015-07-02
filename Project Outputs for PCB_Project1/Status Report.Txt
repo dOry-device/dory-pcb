@@ -1,9 +1,27 @@
-Output: Bill of Materials
-Type  : BOM
+Output: Gerber Files
+Type  : Gerber
 From  : Variant [[No Variations]] of Project [PCB_Project1.PrjPCB]
+   Generated File[mainboardDory.GTL]
+   Generated File[mainboardDory.GBL]
+   Generated File[mainboardDory.GTO]
+   Generated File[mainboardDory.GTP]
+   Generated File[mainboardDory.GTS]
+   Generated File[mainboardDory.GBS]
+   Generated File[mainboardDory.GBP]
+   Generated File[mainboardDory.GBO]
+   Generated File[mainboardDory.GM1]
+   Generated File[mainboardDory.GM2]
+   Generated File[mainboardDory.GM3]
+   Generated File[mainboardDory.GM7]
+   Generated File[mainboardDory.GM13]
+   Generated File[mainboardDory.GM15]
+   Generated File[mainboardDory.GG1]
+   Generated File[mainboardDory.RUL]
+   Generated File[mainboardDory.EXTREP]
+   Generated File[mainboardDory.REP]
 
 
-Files Generated   : 0
+Files Generated   : 18
 Documents Printed : 0
 
-Finished Output Generation At 21:23:48 On 07.06.2015
+Finished Output Generation At 21:00:31 On 01.07.2015
