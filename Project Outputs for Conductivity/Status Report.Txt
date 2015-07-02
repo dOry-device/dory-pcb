@@ -1,10 +1,12 @@
-Output: Mixed Sim
-Type  : AdvSimNetlist
+Output: NC Drill Files
+Type  : NC Drill
 From  : Project [Conductivity.PrjPcb]
-   Generated File[Conductivity.nsx]
+   Generated File[Conductivity.TXT]
+   Generated File[Conductivity.LDP]
+   Generated File[Conductivity.DRR]
 
 
-Files Generated   : 1
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 17:58:56 On 03.06.2015
+Finished Output Generation At 16:52:35 On 02.07.2015
