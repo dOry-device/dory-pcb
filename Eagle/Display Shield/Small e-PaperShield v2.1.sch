@@ -11010,6 +11010,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-166.37" y1="86.36" x2="-162.56" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="-166.37" y1="106.68" x2="-160.02" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-166.37" y="106.68"/>
+<junction x="-166.37" y="110.49"/>
 </segment>
 <segment>
 <pinref part="U3" gate="PWR" pin="VCC"/>
@@ -11281,11 +11282,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="321.31" y1="43.18" x2="321.31" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<wire x1="450.85" y1="137.16" x2="450.85" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
