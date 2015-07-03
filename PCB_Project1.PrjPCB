@@ -344,70 +344,66 @@ DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument42]
-DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument43]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GM2
 DItemRevisionGUID=
 
-[GeneratedDocument44]
+[GeneratedDocument43]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GM3
 DItemRevisionGUID=
 
-[GeneratedDocument45]
+[GeneratedDocument44]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GM7
 DItemRevisionGUID=
 
-[GeneratedDocument46]
+[GeneratedDocument45]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GM13
 DItemRevisionGUID=
 
-[GeneratedDocument47]
+[GeneratedDocument46]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GM15
 DItemRevisionGUID=
 
-[GeneratedDocument48]
+[GeneratedDocument47]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GML
 DItemRevisionGUID=
 
-[GeneratedDocument49]
+[GeneratedDocument48]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GPB
 DItemRevisionGUID=
 
-[GeneratedDocument50]
+[GeneratedDocument49]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GPT
 DItemRevisionGUID=
 
-[GeneratedDocument51]
+[GeneratedDocument50]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument52]
+[GeneratedDocument51]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument53]
+[GeneratedDocument52]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument54]
+[GeneratedDocument53]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument55]
+[GeneratedDocument54]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument56]
+[GeneratedDocument55]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.REP
 DItemRevisionGUID=
 
-[GeneratedDocument57]
+[GeneratedDocument56]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument58]
+[GeneratedDocument57]
 DocumentPath=Project Outputs for PCB_Project1\mainboardDory.TXT
 DItemRevisionGUID=
 
@@ -672,7 +668,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Xerox Phaser 6180MFP-D PS (redirected 4)
+TargetPrinter=POOL1 on print1.epfl.ch (redirected 4)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
